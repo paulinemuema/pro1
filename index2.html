@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Vacation Planner</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Plan Your Dream Vacation!</h1>
+        <p>Where will your next adventure take you?</p>
+    </header>
+
+    <!-- Dream Destinations List -->
+    <section>
+        <h2>Top Destinations</h2>
+        <ul>
+            <li>Maldives</li>
+            <li>Paris</li>
+            <li>Tokyo</li>
+            <li>New York</li>
+            <li>Sydney</li>
+        </ul>
+    </section>
+
+    <!-- Vacation Planner Form -->
+    <section>
+        <h2>Your Travel Preferences</h2>
+        <form>
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="destination">Choose a Destination:</label><br>
+            <select id="destination" name="destination">
+                <option value="maldives">Maldives</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="newyork">New York</option>
+                <option value="sydney">Sydney</option>
+            </select><br><br>
+
+            <p>Traveling With:</p>
+            <input type="radio" id="solo" name="travel_group" value="solo" required>
+            <label for="solo">Solo</label><br>
+            <input type="radio" id="family" name="travel_group" value="family">
+            <label for="family">Family</label><br>
+            <input type="radio" id="friends" name="travel_group" value="friends">
+            <label for="friends">Friends</label><br><br>
+
+            <label for="activities">Additional Notes:</label><br>
+            <textarea id="activities" name="activities" rows="4" cols="30" placeholder="E.g., Sightseeing, Food Tours"></textarea><br><br>
+
+            <button type="submit">Plan Vacation</button>
+        </form>
+    </section>
+
+    <!-- Sample Vacation Packages Table -->
+    <section>
+        <h2>Vacation Packages</h2>
+        <table border="25">
+            <tr>
+                <th>Destination</th>
+                <th>Price (USD)</th>
+                <th>Duration (Days)</th>
+            </tr>
+            <tr>
+                <td>Maldives</td>
+                <td>$3,000</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>$2,500</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Tokyo</td>
+                <td>$4,000</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dream Vacation Planner. All Rights Reserved.</p>
+        <p>"The world is a book, and those who do not travel read only one page."</p>
+    </footer>
+</body>
+</html>
